@@ -1,0 +1,99 @@
+@import '/Users/lordpon/универ/КП/resto-app/src/assets/scss/Variables.scss';
+ul {
+  padding-left : 12px;
+  margin  : 0;
+  }
+.list {
+  width  : 100%;
+  height : 100%;
+  
+  &__constiner {
+	width  : 100%;
+	height : 100%;
+	}
+  
+  &__body {
+	width: 937px;
+	@include small {
+	  width : 390px;
+	  }
+	@include flex(flex, center, center, column)
+	}
+  
+  &__img {
+	margin-bottom : 50px;
+	
+	
+	img {
+	  @include small {
+		width : 0;
+		}
+	  }
+	}
+  
+  &__title {
+	@include small {
+	padding-left : 10px;
+	}
+	@extend %title;
+	width : 100%;
+	color: black;
+	font-size : 40px;
+	font-weight: 700;
+	position : relative;
+	}
+  
+  &__title:after {
+	@include small {
+	  width : 55%;
+	  }
+	
+	content: '';
+	position : absolute;
+	top : 36px;
+	left : 150px;
+	display : inline-block;
+	width : 80%;
+	
+	height : 0px;
+	border: black 1px solid;
+	}
+  }
+
+.dish {
+  @include small {
+	width : 220px;
+	}
+  
+  width : 340px;
+  position : relative;
+  	img{
+	  @include small {
+		width : 0;
+		}
+	  position: absolute;
+	  top : 12px;
+	  left : 100px;
+	  width : 345px;
+	  height : 12px;
+	  }
+  }
+
+.text {
+  @include small {
+	width : 340px;
+	}
+  @extend %title;
+  color: black;
+  font-size : 23px;
+  font-weight: bold;
+  width: 585px;
+  display : flex;
+  flex-wrap: wrap;
+  justify-content : space-between;
+  align-items : center;
+  margin-bottom : 70px;
+  }
+
+
+

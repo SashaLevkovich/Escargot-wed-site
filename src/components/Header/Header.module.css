@@ -1,0 +1,117 @@
+header .logo {
+  font-family: "Cormorant Infant";
+  color: #96763F;
+  margin-bottom: 50px;
+}
+
+header {
+  position: fixed;
+  max-width: 1400px;
+  width: 1400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px 20px 20px;
+  z-index: 100;
+}
+@media (max-width: 390px) {
+  header {
+    width: 360px;
+    height: 10px;
+    background-color: #272727;
+    z-index: 100;
+  }
+}
+header nav {
+  position: fixed;
+  height: 50px;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+}
+@media (max-width: 390px) {
+  header nav {
+    width: 340px;
+    margin-top: 5px;
+  }
+}
+header nav .burgerBtn {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+@media (max-width: 390px) {
+  header nav .burgerBtn {
+    margin-left: -5px;
+  }
+}
+header nav .burgerBtn > span {
+  position: absolute;
+  top: 11px;
+  width: 30px;
+  background: #96763FA6;
+  height: 2px;
+  border-color: #6F5A37;
+  border-radius: 2px;
+}
+header nav .burgerBtn span:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  width: 30px;
+  background: #96763FA6;
+  height: 2px;
+  border-radius: 2px;
+}
+header nav .burgerBtn span:after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  width: 30px;
+  background: #96763FA6;
+  height: 2px;
+  border-radius: 2px;
+}
+header nav .burgerBtn.active span:before {
+  top: 0;
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left bottom;
+  transition: all 0.5s ease-in-out;
+}
+header nav .burgerBtn.active span:after {
+  top: 0;
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left top;
+  transition: all 0.5s ease-in-out;
+}
+header nav .menu {
+  font-size: 30px;
+  color: #6F5A37;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+@media (max-width: 390px) {
+  header nav .menu {
+    margin-right: 0px;
+  }
+}
+header .logo {
+  display: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+@media (max-width: 390px) {
+  header .logo {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,117 @@
+@import '/Users/lordpon/универ/КП/resto-app/src/assets/scss/Variables.scss';
+
+.posts {
+  width  : 100%;
+  height : 100%;
+  
+  
+  &__container {
+	@include small {
+	  width : 390px;
+	  }
+	width : 1390px;
+ 
+	display : flex;
+	justify-content : space-between;
+	align-items : center;
+	
+	}
+  
+  &__body {
+	@include small {
+	  width : 390px;
+	  flex-wrap: wrap;
+	  }
+	width : 1000px;
+	display : flex;
+	
+	justify-content : center;
+	align-items : center;
+	}
+  
+  &__img{
+	img{
+	  @include small {
+		width : 145px;
+		margin-right : 0;
+		margin-bottom : 10px;
+		margin-left : 40px;
+		}
+	  }
+	
+	margin-right : 50px;
+	}
+  
+  
+  &__text {
+	@include small {
+	  display : flex;
+	  flex-direction: column;
+	  justify-content : center;
+	  align-items : center;
+	  text-align: center;
+	  margin-right : 0;
+	  }
+	margin-right : 50px;
+	}
+  
+  &__title {
+	@extend %title;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom : 26px;
+	}
+ 
+  
+  &__disc { @include small {
+	width : 340px;
+	
+	}
+	@extend %text;
+	width : 400px;
+	font-size: 16px;
+	line-height: 142.49%;
+	margin-bottom : 50px;
+	}
+  
+  &__btn {
+	width: 200px;
+	height: 55px;
+ 
+	display : flex;
+	justify-content : center;
+	align-items : center;
+ 
+	background: #E7E1E1;
+	border: 2px solid #816B47;
+	box-shadow: 2px 1px 8px 2px rgba(55, 2, 2, 0.15);
+	border-radius: 0px 0px 24px 24px;
+	
+		.btn {
+		  @extend %text;
+		  
+		  font-size: 20px;
+		  line-height: 23px;
+		  
+		  text-decoration: none;
+		  
+		  color: #96763F;
+		  }
+	}
+  
+  &__btn:hover{
+	transition: all 1s ease-in-out;
+	box-shadow: inset 0px -1px 8px 2px rgb(55 2 2 / 15%);
+	}
+  
+  
+  }
+
+.posts__body.rev{
+  @include small {
+	
+	margin : 30px 0px;
+	}
+  flex-direction: row-reverse;
+  margin-left : 530px;
+  }

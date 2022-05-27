@@ -1,0 +1,132 @@
+@import '/Users/lordpon/универ/КП/resto-app/src/assets/scss/Variables.scss';
+
+header {
+  @include small {
+    width : 360px;
+    height : 10px;
+    background-color: #272727;
+    z-index: 100;
+    }
+  position:    fixed;
+  
+  max-width: 1400px;
+  width: 1400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding : 20px 10px 20px 20px;
+  z-index: 100;
+  nav {
+    @include small {
+      width : 340px;
+      margin-top : 5px;
+      }
+    
+    position:    fixed;
+    height:      50px;
+    width:      1400px;
+  
+    display:     flex;
+    align-items: center;
+    justify-content : space-between;
+    z-index:     50;
+    
+    .burgerBtn {
+      @include small {
+        margin-left: -5px;
+        }
+      position:    relative;
+      width:       30px;
+      height:      25px;
+      margin-left: 25px;
+      cursor:      pointer;
+      margin-bottom : 5px;
+      
+      
+      
+      > span {
+        position:         absolute;
+        top:              11px;
+        width:            30px;
+        background: #96763FA6;
+        height:           2px;
+        border-color:     #6F5A37;
+        border-radius:    2px;
+        }
+  
+      span:before {
+        content:          '';
+        position:         absolute;
+        top:              9px;
+        width:            30px;
+        background: #96763FA6;
+        height:           2px;
+        border-radius:    2px;
+        }
+  
+      span:after {
+        content:          '';
+        position:         absolute;
+        bottom:           9px;
+        width:            30px;
+        background: #96763FA6;
+        height:           2px;
+        border-radius:    2px;
+      
+        }
+      }
+    
+    
+  
+    .burgerBtn.active{
+     
+      }
+    
+    .burgerBtn.active {
+      span:before{
+        top : 0;
+        transform: rotate(35deg);
+        width: 10px;
+        transform-origin: left bottom;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+  
+    .burgerBtn.active {
+      span:after{
+        top : 0;
+        transform: rotate(-35deg);
+        width: 10px;
+        transform-origin: left top;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    
+    .menu {
+      @include small {
+        margin-right : 0px;
+        }
+      font-size : 30px;
+      color: #6F5A37;
+      margin-right: 25px;
+  
+      margin-bottom : 5px;
+    
+      }
+    }
+  
+  .logo {
+    @include small {
+      display : block;
+      }
+    display : none;
+    @extend %title;
+    margin-bottom : 10px;
+    font-size : 20px;
+    }
+  }
+
+
+
+

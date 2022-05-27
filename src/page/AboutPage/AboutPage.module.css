@@ -1,0 +1,50 @@
+.menu__title, .about__title {
+  font-family: "Cormorant Infant";
+  color: #96763F;
+  margin-bottom: 50px;
+}
+
+.about__container {
+  margin-bottom: 50px;
+}
+@media (max-width: 390px) {
+  .about__container {
+    width: 390px;
+  }
+}
+
+.about__title {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.menu__back {
+  color: #96763F;
+  font-size: 30px;
+  position: absolute;
+  top: 85px;
+  left: 410px;
+}
+@media (max-width: 390px) {
+  .menu__back {
+    display: none;
+  }
+}
+
+.menu__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 75px;
+  font-size: 40px;
+}
+.about-posts {
+  margin-top: 60px;
+}
+
+/*# sourceMappingURL=AboutPage.module.css.map */

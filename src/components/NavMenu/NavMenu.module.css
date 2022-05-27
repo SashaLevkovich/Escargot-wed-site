@@ -1,0 +1,100 @@
+.nav-menu__header {
+  font-family: "Cormorant Infant";
+  color: #96763F;
+  margin-bottom: 50px;
+}
+
+.nav-menu__content ul li a {
+  font-family: "Oranienbaum";
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.nav-menu .nav-menu__container {
+  width: 30%;
+  height: 100%;
+  box-shadow: 7px 1px 20px 0px #3b3939;
+  background-color: #272727;
+}
+.nav-menu__content {
+  width: 390px;
+  height: 600px;
+  padding: 40px 20px 20px 20px;
+  margin-left: 20px;
+}
+@media (max-width: 390px) {
+  .nav-menu__content {
+    width: 340px;
+    padding-top: 72px;
+    background-color: #272727;
+  }
+}
+.nav-menu__content ul {
+  list-style-type: none;
+}
+.nav-menu__content ul li {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: end;
+}
+.nav-menu__content ul li a {
+  width: 100%;
+  font-size: 25px;
+  text-decoration: none;
+  color: #B3B3B3;
+}
+.nav-menu__content ul li:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #B3B3B3;
+  width: 360px;
+  box-shadow: 0px 2px 6px 1px #494747;
+  transition: all 0.4s ease;
+}
+@media (max-width: 390px) {
+  .nav-menu__content ul li:after {
+    width: 0px;
+  }
+}
+.nav-menu__content ul li:hover, .nav-menu__content ul li:hover a {
+  transform: scale(1.09);
+  transition: all 0.4s ease-in-out;
+}
+.nav-menu__header {
+  margin-left: 38px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  display: flex;
+  margin-right: 20px;
+  justify-content: end;
+  align-items: end;
+  z-index: 101;
+}
+.nav-menu__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu__links .link {
+  padding: 0 10px;
+  font-size: 25px;
+  color: rgba(150, 118, 63, 0.67);
+}
+
+.nav-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+/*# sourceMappingURL=NavMenu.module.css.map */

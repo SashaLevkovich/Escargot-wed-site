@@ -1,0 +1,130 @@
+.footer .right__links, .footer .right__title, .footer .left .timetable__title, .footer .left .address__title {
+  font-family: "Cormorant Infant";
+  color: #96763F;
+  margin-bottom: 50px;
+}
+
+.cop, .footer .left .timetable__text, .footer .left .address__text {
+  font-family: "Oranienbaum";
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+  position: relative;
+}
+.footer__container {
+  width: 1425px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+}
+@media (max-width: 390px) {
+  .footer__container {
+    width: 390px;
+  }
+}
+.footer__body {
+  width: 1197px;
+  height: 195px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .left {
+  width: 438px;
+  height: 177px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 390px) {
+  .footer .left {
+    display: none;
+  }
+}
+.footer .left .address__title {
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+}
+.footer .left .address__text {
+  font-size: 20px;
+  line-height: 100%;
+  color: #96763F;
+  margin-bottom: 11px;
+}
+.footer .left .timetable__title {
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+}
+.footer .left .timetable__text {
+  font-size: 20px;
+  line-height: 100%;
+  color: #96763F;
+  margin-bottom: 11px;
+}
+.footer .right__container {
+  width: 478px;
+  height: 195px;
+}
+@media (max-width: 390px) {
+  .footer .right__container {
+    width: 390px;
+  }
+}
+.footer .right__body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .right__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+}
+.footer .right__links {
+  width: 439px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  line-height: 100%;
+  color: #96763F;
+  margin-bottom: 11px;
+}
+@media (max-width: 390px) {
+  .footer .right__links {
+    width: 340px;
+  }
+}
+.footer .right .link {
+  text-decoration: none;
+  color: #96763F;
+}
+.footer .right .link:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 48px;
+  border: 1px solid #96763F;
+  margin-left: 34px;
+}
+
+.cop {
+  position: absolute;
+  font-size: 12px;
+  top: 300px;
+  left: 60px;
+  color: #96763F;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

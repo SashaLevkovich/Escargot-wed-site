@@ -1,0 +1,34 @@
+@mixin flex($prop1,$prop2, $prop3, $prop4 ) {
+  display: $prop1;
+  justify-content: $prop2;
+  align-items: $prop3;
+  flex-direction: $prop4;
+  }
+
+%title {
+  font-family: 'Cormorant Infant';
+  color: #96763F;
+  
+  margin-bottom : 50px;
+  }
+
+%text {
+  font-family: 'Oranienbaum';
+  }
+
+
+$sm: 390px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@media only screen and (max-width: $sm) {
+  
+  }
+
+
+@mixin small {
+  @media  (max-width: $sm) {
+    @content;
+    }
+  }

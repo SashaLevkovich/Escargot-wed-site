@@ -1,0 +1,70 @@
+@import '/Users/lordpon/универ/КП/resto-app/src/assets/scss/Variables.scss';
+
+.land {
+  width  : 100%;
+  height : 100%;
+  
+  
+  	&__container {
+	  @include small {
+		height: 400px;
+		}
+	  height : 700px;
+	  }
+  
+  	&__body {
+	  display : flex;
+	  flex-direction: column;
+	  justify-content : center;
+	  align-items : center;
+	  }
+  
+  &__title {
+	@include small {
+	  width : 285px;
+	  text-align: center;
+	  font-size : 29px;
+	  }
+	@extend %title;
+	position: relative;
+
+	font-size : 2rem;
+	}
+  
+  &__title:before,&__title:after  {
+	@include small {
+	  width : 0px;
+	  height : 0;
+	
+	  }
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 256px;
+	height: 1px;
+	background-color: #96763F;
+	position: absolute;
+	}
+  
+  &__title:before {
+	top : 55%;
+	left: -37%;
+	
+	}
+  
+  &__title:after {
+	top : 55%;
+	right: -37%;
+	}
+  
+  &__pic{
+	
+	img{
+	  @include small {
+		width : 320px;
+		}
+	  width : 810px;
+	  }
+	}
+  
+  }

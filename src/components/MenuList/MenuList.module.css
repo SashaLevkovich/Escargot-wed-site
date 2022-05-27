@@ -1,0 +1,107 @@
+.text, .list__title {
+  font-family: "Cormorant Infant";
+  color: #96763F;
+  margin-bottom: 50px;
+}
+
+ul {
+  padding-left: 12px;
+  margin: 0;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+}
+.list__constiner {
+  width: 100%;
+  height: 100%;
+}
+.list__body {
+  width: 937px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 390px) {
+  .list__body {
+    width: 390px;
+  }
+}
+.list__img {
+  margin-bottom: 50px;
+}
+@media (max-width: 390px) {
+  .list__img img {
+    width: 0;
+  }
+}
+.list__title {
+  width: 100%;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+@media (max-width: 390px) {
+  .list__title {
+    padding-left: 10px;
+  }
+}
+.list__title:after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 150px;
+  display: inline-block;
+  width: 80%;
+  height: 0px;
+  border: black 1px solid;
+}
+@media (max-width: 390px) {
+  .list__title:after {
+    width: 55%;
+  }
+}
+
+.dish {
+  width: 340px;
+  position: relative;
+}
+@media (max-width: 390px) {
+  .dish {
+    width: 220px;
+  }
+}
+.dish img {
+  position: absolute;
+  top: 12px;
+  left: 100px;
+  width: 345px;
+  height: 12px;
+}
+@media (max-width: 390px) {
+  .dish img {
+    width: 0;
+  }
+}
+
+.text {
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
+  width: 585px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+@media (max-width: 390px) {
+  .text {
+    width: 340px;
+  }
+}
+
+/*# sourceMappingURL=MenuList.module.css.map */
